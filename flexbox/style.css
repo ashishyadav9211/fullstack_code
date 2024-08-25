@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.training-section {
+  width: 100%;
+  background: url(./image/bgimage.webp) center;
+  background-size: cover;
+  padding-bottom: 25px;
+}
+
+.training-section h2 {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px 0;
+}
+.card-container {
+  width: 1176px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  flex-basis: 23%;
+ margin: 15px 0px;
+ box-shadow: 0px 0px 10px 3px rgb(225, 234, 199);
+ background-color: white;
+ text-align: center;
+ padding: 20px 0px;
+}
+img {
+  width: 70px;
+  height: 70px;
+}
+
+.card-text {
+  text-align: center;
+}
+.card-item h3{
+padding: 15px 0px;
+}
+
+.card-item p{
+    font-size: 14px;
+    padding: 10px 0px;
+}
+
+.card-item button{
+    padding: 10px 25px;
+    color: black;
+    background: rgba(187, 25, 25, 0.516);
+    border: none;
+    border-radius: 10px;
+}
+
+.card-item:hover{
+    background: blue;
+}
+
+.card-item:hover h3,.card-item:hover p{
+
+    color: white;
+}
+.card-item:hover button{
+background: white;
+color: blue;
+}
+
+.head-section{
+  position: sticky;
+  top: 0;
+  background-color: rgba(128, 255, 141, 0.8);
+  text-align: center;
+  z-index: 1000; /* Ensures it stays on top */
+  color: rgb(229, 61, 75);
+
+}
+@media only screen and (min-width:200px) and  (max-width:767px) {
+    
+    .card-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .card-item {
+        margin: 10px;
+    }
+}
