@@ -64,6 +64,7 @@ commenting this clock will become square shape
 
 .hand i {
   position: absolute;
+
   height: var(--h);
   width: 7px;
   border-radius: 10px;
